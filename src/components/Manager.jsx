@@ -6,6 +6,8 @@ import { v4 as uuidv4 } from 'uuid';
 import 'react-toastify/dist/ReactToastify.css';
 // Use VITE_API_URL when provided, otherwise default to backend port 5000 used by server.js
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+console.log("API URL:", import.meta.env.VITE_API_URL);
+
 
 const Manager = () => {
     const ref = useRef()
